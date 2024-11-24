@@ -1,0 +1,16 @@
+@model TaskManager.Models.TaskItem
+<h1>Task Details</h1>
+
+<div>
+    <strong>Title:</strong> @Model.Title
+</div>
+<div>
+    <strong>Description:</strong> @Model.Description
+</div>
+<div>
+    <strong>Is Completed:</strong> @Model.IsCompleted
+</div>
+
+<a href="/Tasks/Edit/@Model.Id">Edit</a> |
+<a href="/Tasks/Delete/@Model.Id">Delete</a> |
+<a href="/Tasks">Back to List</a>
